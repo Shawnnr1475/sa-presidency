@@ -1,0 +1,113 @@
+/*Presidents of South Africa*/
+
+.grid-container2{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../img/south-african-flag-750x505.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 0px;
+    position:relative;
+}
+
+/*First President of South Africa*/
+.president1-{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: center;
+    padding: 5px;
+}
+
+.president1- > label{
+    font-size: 18px;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif ;
+}
+.president1- > h2{
+    color: white;
+}
+.president1- > a> img{
+    border-radius: 100px;
+    border: black solid 5px;
+
+}
+.president1- > a>img:hover{
+    background-color:white;
+    opacity: 0.8;
+}
+
+/*--------------------------------------------------*/
+
+/*The other Presidents of SA*/
+.president-{
+    text-align: center;
+}
+
+.president- > label{
+    font-size: 18px;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif ;
+}
+.president- > h3{
+    color: white;
+}
+.president- >a> img{
+    border-radius: 100px;
+    border: black solid 5px;
+
+}
+
+.president- > a > img:hover{
+    background-color:white;
+    opacity: 0.8;
+}
+
+/*----------------------------------------------------------------------*/
+
+/*Current President of SA*/
+.presidentOfSA{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: center;
+    padding: 5px;
+}
+
+.presidentOfSA > label{
+    font-size: 18px;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif ;
+}
+.presidentOfSA > h1{
+    color: white;
+}
+.presidentOfSA > a> img{
+    border-radius: 150px;
+    border: black solid 5px;
+
+}
+.presidentOfSA > a>img:hover{
+    background-color:white;
+    opacity: 0.8;
+}
+
+/*--------------------------------------------------------------------------*/
+
+
+/*Styles to cater for moblie device*/
+@media all and (max-width:500px){
+
+    .grid-container2{
+        grid-template-columns: auto 
+    }
+
+    .president1-{
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .presidentOfSA{
+        grid-column-start: 1;
+        grid-column-end: 2
+    } 
+}

@@ -1,0 +1,69 @@
+.grid-container{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../img/obb.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 0px;
+    position:relative;
+}
+.president1{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: center;
+    padding: 5px;
+}
+
+.president1 > label{
+    font-size: 18px;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif ;
+}
+.president1 > h2{
+    color: white;
+}
+.president1 > a> img{
+    border-radius: 100px;
+    border: black solid 5px;
+
+}
+.president1 > a>img:hover{
+    background-color:white;
+    opacity: 0.8;
+}
+
+.president{
+    text-align: center;
+}
+
+.president > label{
+    font-size: 18px;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif ;
+}
+.president > h3{
+    color: white;
+}
+.president >a> img{
+    border-radius: 100px;
+    border: black solid 5px;
+
+}
+
+.president > a > img:hover{
+    background-color:white;
+    opacity: 0.8;
+}
+
+@media all and (max-width:500px){
+    .grid-container{
+        grid-template-columns: auto
+    }
+
+    .president1{
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    
+}
